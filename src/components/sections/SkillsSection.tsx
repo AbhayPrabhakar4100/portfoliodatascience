@@ -65,23 +65,23 @@ const SkillsSection = () => {
 
   const specializations = [
     {
-      title: "Fraud Analytics",
-      description: "Advanced fraud detection systems with real-time inference",
+      title: "Machine Learning",
+      description: "Building production-grade ML systems with real-time inference and feature engineering",
       technologies: ["XGBoost", "SMOTE", "Feature Engineering", "Real-time ML"],
       icon: Settings,
       color: "primary"
     },
     {
       title: "Generative AI",
-      description: "LLM pipelines and synthetic data generation",
+      description: "LLM pipelines, synthetic data generation, and intelligent automation",
       technologies: ["Llama 3.1", "LangChain", "OpenAI", "Transformers"],
       icon: Cpu,
       color: "accent"
     },
     {
-      title: "Data Engineering",
-      description: "Scalable data architecture and pipeline optimization",
-      technologies: ["Snowflake", "Spark", "Airflow", "Cloud Architecture"],
+      title: "Data Science",
+      description: "End-to-end analytics: scalable data systems, fraud prevention, and model optimization",
+      technologies: ["Snowflake", "Spark", "Python", "Cloud Architecture"],
       icon: Database,
       color: "primary"
     }
