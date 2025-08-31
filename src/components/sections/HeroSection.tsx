@@ -51,7 +51,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
           </h1>
 
           {/* Subtext */}
-          <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto mb-8 animate-fade-in-right">
+          <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-4xl mx-auto mb-8 animate-fade-in-right font-medium">
             Teaching machines to spot patterns humans miss.
           </p>
 
