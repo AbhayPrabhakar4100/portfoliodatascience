@@ -7,7 +7,7 @@ const ExperienceSection = () => {
     {
       company: "Kount – Equifax",
       role: "Data Science intern",
-      period: "2025",
+      period: "May–Aug 2025",
       achievements: [
         "Built $500M+ Snowflake data lake architecture",
         "Developed fraud detection features with advanced ML",
@@ -21,7 +21,7 @@ const ExperienceSection = () => {
     {
       company: "Georgia State University x Truist Bank",
       role: "Research Data Scientist",
-      period: "2024–2025",
+      period: "Aug 2024–May 2025",
       achievements: [
         "Fraud detection pipeline with XGBoost + SMOTE",
         "Llama 3.1 synthetic applicant generation",
@@ -35,7 +35,7 @@ const ExperienceSection = () => {
     {
       company: "Institute of Economic Growth",
       role: "Data Science Researcher",
-      period: "2023–2024",
+      period: "Jan 2023–Jul 2024",
       achievements: [
         "Random Forest for GST tax fraud detection",
         "Spark ML automation and pipeline optimization",
@@ -49,7 +49,7 @@ const ExperienceSection = () => {
     {
       company: "MetLife",
       role: "Data science intern",
-      period: "2022",
+      period: "Jun–Aug 2022",
       achievements: [
         "BERT NLP pipeline on customer comments",
         "LDA topic modeling for sentiment analysis",
