@@ -31,7 +31,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
               <img
                 src={abhayHeadshot}
                 alt="Abhay Prabhakar - Data Scientist"
-                className="w-40 h-40 rounded-full border-4 border-primary shadow-glow object-cover animate-scale-in"
+                className="w-40 h-40 rounded-full border-4 border-primary shadow-glow object-cover object-top animate-scale-in"
               />
               <div className="absolute inset-0 rounded-full bg-primary/20 animate-glow-pulse" />
             </div>
