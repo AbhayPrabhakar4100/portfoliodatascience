@@ -48,7 +48,7 @@ const ExperienceSection = () => {
     },
     {
       company: "MetLife",
-      role: "Data Analyst",
+      role: "Data science intern",
       period: "2022",
       achievements: [
         "BERT NLP pipeline on customer comments",
