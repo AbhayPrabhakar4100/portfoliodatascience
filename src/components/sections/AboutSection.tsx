@@ -17,7 +17,7 @@ const AboutSection = () => {
     },
     {
       degree: "BA (Honors) Economics",
-      institution: "University of Delhi",
+      institution: "Shaheed Bhagat Singh College, University of Delhi",
       period: "2018–2021",
       status: "Completed"
     }
