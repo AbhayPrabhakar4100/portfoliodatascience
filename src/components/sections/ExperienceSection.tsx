@@ -15,7 +15,7 @@ const ExperienceSection = () => {
         "Partnered with ML engineers to achieve <50 ms real-time inference latency at 99.9% uptime."
       ],
       technologies: ["Snowflake", "XGBoost", "Python", "AWS", "Real-time ML"],
-      impact: "created a 500m+ row dataset from multiple sources",
+      impact: "Created a 500m+ row dataset from multiple sources",
       color: "primary"
     },
     {
