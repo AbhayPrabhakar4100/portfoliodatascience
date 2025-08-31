@@ -169,7 +169,7 @@ const ProjectsSection = () => {
               className="bg-primary-gradient hover:shadow-glow transition-all duration-300 hover:scale-105"
               asChild
             >
-              <a href="https://github.com/abhay-prabhakar" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/AbhayPrabhakar4100" target="_blank" rel="noopener noreferrer">
                 View All Projects on GitHub
               </a>
             </Button>
