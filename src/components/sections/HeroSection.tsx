@@ -52,9 +52,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
 
           {/* Subtext */}
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto mb-8 animate-fade-in-right">
-            I build scalable ML pipelines and AI solutions that have prevented{" "}
-            <span className="text-primary font-semibold">$30M+ in fraud losses</span>{" "}
-            and improved real-time detection systems.
+            Teaching machines to spot patterns humans miss.
           </p>
 
           {/* CTA Buttons */}
