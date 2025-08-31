@@ -9,10 +9,10 @@ const ExperienceSection = () => {
       role: "Data Science intern",
       period: "May 2025–Aug 2025",
       achievements: [
-        "Built $500M+ Snowflake data lake architecture",
-        "Developed fraud detection features with advanced ML",
-        "Optimized XGBoost models for real-time inference",
-        "Reduced inference latency to <50ms"
+        "Built a unified 500M+ row Snowflake dataset (44 features) via JSON parsing & schema unification, cutting ML iteration time by 60%.",
+        "Productionized a domain-normalization SQL UDF scaling from 1→40+ domains, tripling email fraud detection coverage (0.35% → 0.95%).",
+        "Delivered a 2% accuracy lift in XGBoost fraud model (projected $3M+ annual savings).",
+        "Partnered with ML engineers to achieve <50 ms real-time inference latency at 99.9% uptime."
       ],
       technologies: ["Snowflake", "XGBoost", "Python", "AWS", "Real-time ML"],
       impact: "$500M+ Data Infrastructure",
@@ -23,10 +23,10 @@ const ExperienceSection = () => {
       role: "Research Data Scientist",
       period: "Aug 2024–May 2025",
       achievements: [
-        "Fraud detection pipeline with XGBoost + SMOTE",
-        "Llama 3.1 synthetic applicant generation",
-        "Interactive dashboards saving $30M+",
-        "Advanced feature engineering for fraud prevention"
+        "Rebalanced a 1:99 fraud ratio on 500K+ mortgages with engineered features & SMOTE; built XGBoost model with 80% recall & 85% precision, saving $30M+.",
+        "Generated 8K+ synthetic applicants using custom Llama 3.1 + LangChain pipeline (82% realistic), enabling robust fraud screening.",
+        "Built interactive executive dashboards that accelerated adoption of new fraud policies and cut charge-back rates by 12%.",
+        "Designed advanced feature engineering workflows powering next-gen fraud prevention models."
       ],
       technologies: ["XGBoost", "SMOTE", "Llama 3.1", "Python", "Dashboards"],
       impact: "$30M+ Fraud Prevention",
@@ -37,10 +37,10 @@ const ExperienceSection = () => {
       role: "Data Science Researcher",
       period: "Feb 2023–Jul 2024",
       achievements: [
-        "Random Forest for GST tax fraud detection",
-        "Spark ML automation and pipeline optimization",
-        "Macroeconomic forecasting models",
-        "Large-scale data processing workflows"
+        "Developed Random Forest for GST tax fraud detection, boosting recall to 85% and accuracy by 45% over legacy rules.",
+        "Automated Spark + Python ML pipelines, cutting manual review workload by 40%.",
+        "Built XGBoost macroeconomic forecasting model (AUC-ROC 0.92) guiding $50M+ investment decisions.",
+        "Scaled large data workflows and delivered Tableau dashboards adopted by policy analysts & economists."
       ],
       technologies: ["Random Forest", "Spark ML", "Python", "Tax Analytics"],
       impact: "Government Tax Fraud Detection",
@@ -51,10 +51,10 @@ const ExperienceSection = () => {
       role: "Data science intern",
       period: "Aug 2022–Dec 2022",
       achievements: [
-        "BERT NLP pipeline on customer comments",
-        "LDA topic modeling for sentiment analysis",
-        "Power BI dashboards for business insights",
-        "Customer experience optimization"
+        "Deployed BERT NLP pipeline on 100K+ customer comments (88% accuracy), shaping 2 new product features.",
+        "Applied LDA topic modeling to identify pain points, lifting NPS by +12 points.",
+        "Built interactive Power BI dashboards for real-time CX sentiment monitoring.",
+        "Delivered actionable insights that drove customer experience optimization initiatives."
       ],
       technologies: ["BERT", "NLP", "LDA", "Power BI", "Python"],
       impact: "Customer Experience Enhancement",
