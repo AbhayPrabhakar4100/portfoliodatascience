@@ -5,7 +5,7 @@ import { GraduationCap, Calendar, Download } from "lucide-react";
 const AboutSection = () => {
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/abhay-resume.png';
+    link.href = 'https://drive.google.com/uc?export=download&id=1Nn1jmBsdHxN3pftRO3qy6dJ3Hq9E9_fJ';
     link.download = 'Abhay_Prabhakar_Resume.png';
     link.click();
   };
