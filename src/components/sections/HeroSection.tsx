@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
-import abhayHeadshot from "@/assets/abhay-headshot.jpg";
+import abhayHeadshot from "@/assets/abhay-real-headshot.jpg";
 
 interface HeroSectionProps {
   onSectionChange: (section: string) => void;
