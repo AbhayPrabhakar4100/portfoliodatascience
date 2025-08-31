@@ -84,7 +84,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
               <Linkedin className="w-6 h-6 text-primary" />
             </a>
             <a
-              href="https://github.com/abhay-prabhakar"
+              href="https://github.com/AbhayPrabhakar4100"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110 shadow-card"
