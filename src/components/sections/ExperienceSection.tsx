@@ -7,7 +7,7 @@ const ExperienceSection = () => {
     {
       company: "Kount – Equifax",
       role: "Data Science intern",
-      period: "May–Aug 2025",
+      period: "May 2025–Aug 2025",
       achievements: [
         "Built $500M+ Snowflake data lake architecture",
         "Developed fraud detection features with advanced ML",
@@ -35,7 +35,7 @@ const ExperienceSection = () => {
     {
       company: "Institute of Economic Growth",
       role: "Data Science Researcher",
-      period: "Jan 2023–Jul 2024",
+      period: "Feb 2023–Jul 2024",
       achievements: [
         "Random Forest for GST tax fraud detection",
         "Spark ML automation and pipeline optimization",
@@ -49,7 +49,7 @@ const ExperienceSection = () => {
     {
       company: "MetLife",
       role: "Data science intern",
-      period: "Jun–Aug 2022",
+      period: "Aug 2022–Dec 2022",
       achievements: [
         "BERT NLP pipeline on customer comments",
         "LDA topic modeling for sentiment analysis",
