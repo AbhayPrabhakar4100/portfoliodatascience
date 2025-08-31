@@ -18,13 +18,12 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
       <div className="absolute inset-0 bg-hero-gradient opacity-90" />
       
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float" />
-      <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/20 rounded-full animate-float" style={{ animationDelay: "2s" }} />
-      <div className="absolute top-40 right-20 w-12 h-12 bg-primary/10 rounded-full animate-float" style={{ animationDelay: "4s" }} />
+      <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{ animationDelay: "2s" }} />
+      <div className="absolute top-40 right-20 w-12 h-12 bg-primary/20 rounded-full animate-float" style={{ animationDelay: "4s" }} />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="animate-fade-in">
+        <div className="animate-fade-in pt-16">
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
