@@ -6,7 +6,7 @@ const ExperienceSection = () => {
   const experiences = [
     {
       company: "Kount – Equifax",
-      role: "Data Scientist",
+      role: "Data Science intern",
       period: "2025",
       achievements: [
         "Built $500M+ Snowflake data lake architecture",
