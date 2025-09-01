@@ -92,7 +92,8 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
               <Github className="w-6 h-6 text-primary" />
             </a>
             <a
-              href="mailto:abhay.prabhakar.93@gmail.com"
+              href="mailto:abhay.prabhakar.93@gmail.com?subject=Portfolio%20Inquiry%20–%20Abhay%20Prabhakar&body=Hi%20Abhay,%20I%27d%20like%20to%20connect%20about..."
+              aria-label="Email Abhay Prabhakar"
               className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110 shadow-card"
             >
               <Mail className="w-6 h-6 text-primary" />
