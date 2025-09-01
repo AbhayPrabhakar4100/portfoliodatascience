@@ -6,68 +6,68 @@ import { Github, ExternalLink, TrendingUp, Brain, Shield } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Fraud Detection Pipeline",
-      description: "Advanced fraud detection system using XGBoost with SMOTE for handling imbalanced datasets. Achieved 0.90 AUC with comprehensive feature engineering and real-time inference capabilities.",
+      title: "Fossil Demand Forecasting",
+      description: "Forecasting global watch demand for Fossil to optimize inventory and supply chain. Built stacking ensemble with ARIMA features and Bayesian hyperparameter tuning, achieving 5% MAPE.",
       achievements: [
-        "AUC Score: 0.90",
-        "Real-time inference <50ms",
-        "Handles 1M+ transactions/day",
-        "Advanced feature engineering"
+        "44K+ records, 45 features (categorical + numerical)",
+        "Lead/lag and ARIMA-based feature engineering",
+        "Stacking ensemble model with Bayesian Optimization",
+        "$400M savings in carrying costs and $2.8B sales protection"
       ],
-      technologies: ["XGBoost", "SMOTE", "Python", "Scikit-learn", "Pandas"],
-      github: "https://github.com/abhay-prabhakar/fraud-detection",
+      technologies: ["Python", "Scikit-learn", "ARIMA", "Bayesian Optimization", "Forecasting"],
+      github: "https://github.com/AbhayPrabhakar4100/Fossil-Demand-Forecasting",
       demo: "#",
       icon: Shield,
       color: "primary",
-      impact: "90% Accuracy"
+      impact: "5% MAPE"
     },
     {
-      title: "Synthetic Applicants Pipeline",
-      description: "Generative AI pipeline using Llama 3.1 and LangChain to create 8K synthetic fraud profiles with 82% similarity to real data for model training and testing.",
+      title: "PantherBot – AI Academic Chatbot",
+      description: "AI-driven chatbot to assist Georgia State University students in exploring undergraduate and graduate programs. Integrates GPT-4 Turbo, program datasets, and Google Search fallback for accurate recommendations.",
       achievements: [
-        "8K synthetic profiles generated",
-        "82% similarity to real data",
-        "Automated pipeline with LangChain",
-        "Fraud pattern replication"
+        "Streamlit frontend with responsive UI",
+        "GPT-4 Turbo + multi-turn memory",
+        "Real-time tuition, curriculum, and faculty lookup",
+        "Google Search fallback with Serper.dev"
       ],
-      technologies: ["Llama 3.1", "LangChain", "Python", "OpenAI", "Transformers"],
-      github: "https://github.com/abhay-prabhakar/synthetic-applicants",
+      technologies: ["Python", "Streamlit", "OpenAI", "LangChain", "API Integration"],
+      github: "https://github.com/AbhayPrabhakar4100/Panther_Chatbot",
       demo: "#",
       icon: Brain,
       color: "accent",
-      impact: "82% Data Similarity"
+      impact: "Real-time program guidance"
     },
     {
-      title: "Real-time ML Inference System",
-      description: "High-performance ML inference system built on AWS with optimized XGBoost models for fraud detection. Achieved sub-50ms latency at scale.",
+      title: "Context-Aware AI Agents (RAG Persona Benchmark)",
+      description: "Built Retrieval-Augmented Generation (RAG) pipeline to simulate and evaluate AI personas (journalist, researcher) with factual grounding and stylistic consistency.",
       achievements: [
-        "Sub-50ms inference latency",
-        "Auto-scaling architecture",
-        "99.9% uptime SLA",
-        "Cost-optimized deployment"
+        "Context-specific knowledge retrieval",
+        "Persona-based style simulation",
+        "Comparative evaluation metrics (accuracy, style, depth)",
+        "Extensible framework for multi-agent simulations"
       ],
-      technologies: ["AWS", "Docker", "XGBoost", "FastAPI", "Redis"],
-      github: "https://github.com/abhay-prabhakar/ml-inference",
+      technologies: ["Python", "RAG", "LangChain", "Transformers", "NLP"],
+      github: "https://github.com/AbhayPrabhakar4100/context-aware-ai-agents",
       demo: "#",
       icon: TrendingUp,
       color: "primary",
-      impact: "<50ms Latency"
+      impact: "Persona-grounded LLMs"
     },
     {
-      title: "Snowflake Data Lake Architecture",
-      description: "$500M+ data lake architecture designed for fraud analytics at scale. Implemented efficient data pipelines with optimized query performance.",
+      title: "Credit Card Fraud Detection",
+      description: "End-to-end fraud detection pipeline on Kaggle dataset with Random Forest, Logistic Regression, and XGBoost. Tuned Random Forest achieved 0.997 ROC-AUC with optimal thresholding.",
       achievements: [
-        "$500M+ data processing",
-        "Multi-petabyte architecture", 
-        "Real-time data ingestion",
-        "Advanced security controls"
+        "Highly imbalanced dataset (0.17% fraud rate)",
+        "Precision-Recall curve threshold tuning",
+        "Real-time scoring & risk explanations",
+        "Reduced manual review workload with automated fraud catch"
       ],
-      technologies: ["Snowflake", "dbt", "Airflow", "Python", "SQL"],
-      github: "https://github.com/abhay-prabhakar/data-lake",
+      technologies: ["Python", "Scikit-learn", "XGBoost", "Random Forest", "Fraud Analytics"],
+      github: "https://github.com/AbhayPrabhakar4100/cred-card-fraud-detection-",
       demo: "#",
       icon: TrendingUp,
       color: "accent",
-      impact: "$500M+ Scale"
+      impact: "99.7% ROC-AUC"
     }
   ];
 
