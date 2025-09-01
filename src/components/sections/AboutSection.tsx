@@ -101,7 +101,7 @@ const AboutSection = () => {
             <Card className="bg-card-gradient border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 text-center">
               <CardContent className="p-8">
                 <div className="text-3xl font-bold text-primary mb-2">500M+</div>
-                <div className="text-muted-foreground">Dataset Architected From Multiple So</div>
+                <div className="text-muted-foreground">Dataset Architected From Multiple Sources</div>
               </CardContent>
             </Card>
           </div>
