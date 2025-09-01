@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Calendar, Download } from "lucide-react";
-
 const AboutSection = () => {
   const handleResumeDownload = () => {
     const link = document.createElement('a');
@@ -9,30 +8,23 @@ const AboutSection = () => {
     link.download = 'Abhay_Prabhakar_Resume.png';
     link.click();
   };
-
-  const education = [
-    {
-      degree: "MS Data Science & Analytics",
-      institution: "Georgia State University",
-      period: "2024–2025",
-      status: "In Progress"
-    },
-    {
-      degree: "PG Diploma in Data Analytics",
-      institution: "GGSIPU",
-      period: "2021–2022",
-      status: "Completed"
-    },
-    {
-      degree: "BA (Honors) Economics",
-      institution: "Shaheed Bhagat Singh College, University of Delhi",
-      period: "2018–2021",
-      status: "Completed"
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-background">
+  const education = [{
+    degree: "MS Data Science & Analytics",
+    institution: "Georgia State University",
+    period: "2024–2025",
+    status: "In Progress"
+  }, {
+    degree: "PG Diploma in Data Analytics",
+    institution: "GGSIPU",
+    period: "2021–2022",
+    status: "Completed"
+  }, {
+    degree: "BA (Honors) Economics",
+    institution: "Shaheed Bhagat Singh College, University of Delhi",
+    period: "2018–2021",
+    status: "Completed"
+  }];
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 animate-fade-in">
@@ -66,8 +58,7 @@ const AboutSection = () => {
             <div className="animate-fade-in-right">
               <h3 className="text-2xl font-semibold mb-6 text-primary">Education</h3>
               <div className="space-y-6">
-                {education.map((edu, index) => (
-                  <Card key={index} className="bg-card-gradient border-border shadow-card hover:shadow-primary transition-all duration-300 hover:scale-105">
+                {education.map((edu, index) => <Card key={index} className="bg-card-gradient border-border shadow-card hover:shadow-primary transition-all duration-300 hover:scale-105">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         <div className="p-2 bg-primary/20 rounded-lg">
@@ -81,19 +72,14 @@ const AboutSection = () => {
                           <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                             <Calendar className="w-4 h-4" />
                             <span>{edu.period}</span>
-                            <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                              edu.status === "In Progress" 
-                                ? "bg-accent/20 text-accent" 
-                                : "bg-primary/20 text-primary"
-                            }`}>
+                            <span className={`px-2 py-1 rounded-full text-xs font-medium ${edu.status === "In Progress" ? "bg-accent/20 text-accent" : "bg-primary/20 text-primary"}`}>
                               {edu.status}
                             </span>
                           </div>
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
             </div>
           </div>
@@ -103,7 +89,7 @@ const AboutSection = () => {
             <Card className="bg-card-gradient border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 text-center">
               <CardContent className="p-8">
                 <div className="text-3xl font-bold text-primary mb-2">$30M+</div>
-                <div className="text-muted-foreground">Fraud Losses Prevented</div>
+                <div className="text-muted-foreground">Estimated Fraud Losses Prevented</div>
               </CardContent>
             </Card>
             <Card className="bg-card-gradient border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 text-center">
@@ -114,8 +100,8 @@ const AboutSection = () => {
             </Card>
             <Card className="bg-card-gradient border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 text-center">
               <CardContent className="p-8">
-                <div className="text-3xl font-bold text-primary mb-2">$500M+</div>
-                <div className="text-muted-foreground">Data Lake Architecture</div>
+                <div className="text-3xl font-bold text-primary mb-2">500M+</div>
+                <div className="text-muted-foreground">Dataset Architected From Multiple So</div>
               </CardContent>
             </Card>
           </div>
@@ -128,11 +114,7 @@ const AboutSection = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-2">Download Resume</h3>
                   <p className="text-muted-foreground">Get a copy of my detailed resume</p>
                 </div>
-                <Button 
-                  onClick={handleResumeDownload}
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                  size="lg"
-                >
+                <Button onClick={handleResumeDownload} className="bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
                   <Download className="w-5 h-5 mr-2" />
                   Download Resume
                 </Button>
@@ -141,8 +123,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
