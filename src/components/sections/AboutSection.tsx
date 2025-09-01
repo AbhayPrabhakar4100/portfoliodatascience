@@ -42,9 +42,8 @@ const AboutSection = () => {
                   Snowflake data lakes to building XGBoost and LLM pipelines that save millions in fraud prevention.
                 </p>
                 <p>
-                  With expertise across <span className="text-primary">Python, SQL, AWS/GCP</span>, and real-time ML inference, 
-                  I thrive on creating data-driven solutions that deliver measurable impact. My passion lies in 
-                  transforming complex data challenges into elegant, scalable solutions.
+                  Skilled in <span className="text-primary">Python, SQL, AWS, and GCP</span>, I specialize in building scalable, 
+                  real-time ML solutions that turn arcane data challenges into measurable business impact.
                 </p>
                 <p>
                   Throughout my career, I've had the privilege of working with industry leaders like 
