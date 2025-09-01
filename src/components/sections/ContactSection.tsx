@@ -72,7 +72,7 @@ const ContactSection = () => {
       icon: Mail,
       label: "Email",
       value: "abhay.prabhakar.93@gmail.com",
-      href: "mailto:abhay.prabhakar.93@gmail.com",
+      href: "mailto:abhay.prabhakar.93@gmail.com?subject=Portfolio%20Inquiry%20%E2%80%93%20Abhay%20Prabhakar&body=Hi%20Abhay,%20I%27d%20like%20to%20connect%20about...",
       color: "primary"
     },
     {
