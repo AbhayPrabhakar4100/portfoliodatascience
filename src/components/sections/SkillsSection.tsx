@@ -182,7 +182,7 @@ const SkillsSection = () => {
             <h3 className="text-2xl font-semibold mb-6">Key Achievements</h3>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card">
-                <div className="text-2xl font-bold text-primary mb-2">5+</div>
+                <div className="text-2xl font-bold text-primary mb-2">2+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card">
