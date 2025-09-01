@@ -15,7 +15,7 @@ const ExperienceSection = () => {
         "Partnered with ML engineers to achieve <50 ms real-time inference latency at 99.9% uptime."
       ],
       technologies: ["Snowflake", "XGBoost", "Python", "AWS", "Real-time ML"],
-      impact: "500m+ data set architected from multiple sources",
+      impact: "Created a 500m+ row dataset from multiple sources",
       color: "primary"
     },
     {
@@ -29,7 +29,7 @@ const ExperienceSection = () => {
         "Designed advanced feature engineering workflows powering next-gen fraud prevention models."
       ],
       technologies: ["XGBoost", "SMOTE", "Llama 3.1", "Python", "Dashboards"],
-      impact: "Estimated Fraud Losses Prevented",
+      impact: "Estimated $30M+ Fraud Prevention",
       color: "accent"
     },
     {
