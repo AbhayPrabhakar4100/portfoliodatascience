@@ -2,24 +2,26 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 import abhayHeadshot from "@/assets/abhay-real-headshot.jpg";
-
 interface HeroSectionProps {
   onSectionChange: (section: string) => void;
 }
-
-const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
-  return (
-    <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
+const HeroSection = ({
+  onSectionChange
+}: HeroSectionProps) => {
+  return <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroBackground})`
+    }} />
       <div className="absolute inset-0 bg-hero-gradient opacity-90" />
       
       {/* Floating Elements */}
-      <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{ animationDelay: "2s" }} />
-      <div className="absolute top-40 right-20 w-12 h-12 bg-primary/20 rounded-full animate-float" style={{ animationDelay: "4s" }} />
+      <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{
+      animationDelay: "2s"
+    }} />
+      <div className="absolute top-40 right-20 w-12 h-12 bg-primary/20 rounded-full animate-float" style={{
+      animationDelay: "4s"
+    }} />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
@@ -27,11 +29,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
-              <img
-                src={abhayHeadshot}
-                alt="Abhay Prabhakar - Data Scientist"
-                className="w-40 h-40 rounded-full border-4 border-primary shadow-glow object-cover object-top animate-scale-in"
-              />
+              <img src={abhayHeadshot} alt="Abhay Prabhakar - Data Scientist" className="w-40 h-40 rounded-full border-4 border-primary shadow-glow object-cover object-top animate-scale-in" />
               <div className="absolute inset-0 rounded-full bg-primary/20 animate-glow-pulse" />
             </div>
           </div>
@@ -42,7 +40,7 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
               Data Scientist
             </span>
             <br />
-            <span className="text-foreground">Fraud Analytics</span>
+            <span className="text-foreground">Machine learning & Analytics</span>
             <br />
             <span className="bg-accent-gradient bg-clip-text text-transparent">
               Generative AI
@@ -56,65 +54,36 @@ const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
-            <Button
-              size="lg"
-              onClick={() => onSectionChange("projects")}
-              className="bg-primary-gradient hover:shadow-glow transition-all duration-300 hover:scale-105"
-            >
+            <Button size="lg" onClick={() => onSectionChange("projects")} className="bg-primary-gradient hover:shadow-glow transition-all duration-300 hover:scale-105">
               View My Work
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => onSectionChange("contact")}
-              className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105"
-            >
+            <Button size="lg" variant="outline" onClick={() => onSectionChange("contact")} className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105">
               Contact Me
             </Button>
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12 animate-scale-in">
-            <a
-              href="https://linkedin.com/in/abhay-prabhakar04"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110 shadow-card"
-            >
+            <a href="https://linkedin.com/in/abhay-prabhakar04" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110 shadow-card">
               <Linkedin className="w-6 h-6 text-primary" />
             </a>
-            <a
-              href="https://github.com/AbhayPrabhakar4100"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110 shadow-card"
-            >
+            <a href="https://github.com/AbhayPrabhakar4100" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110 shadow-card">
               <Github className="w-6 h-6 text-primary" />
             </a>
-            <a
-              href="mailto:abhay.prabhakar.93@gmail.com?subject=Portfolio%20Inquiry%20%E2%80%93%20Abhay%20Prabhakar&body=Hi%20Abhay,%20I%27d%20like%20to%20connect%20about..."
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = 'mailto:abhay.prabhakar.93@gmail.com?subject=Portfolio%20Inquiry%20%E2%80%93%20Abhay%20Prabhakar&body=Hi%20Abhay,%20I%27d%20like%20to%20connect%20about...';
-              }}
-              aria-label="Email Abhay Prabhakar"
-              className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110 shadow-card"
-            >
+            <a href="mailto:abhay.prabhakar.93@gmail.com?subject=Portfolio%20Inquiry%20%E2%80%93%20Abhay%20Prabhakar&body=Hi%20Abhay,%20I%27d%20like%20to%20connect%20about..." onClick={e => {
+            e.preventDefault();
+            window.location.href = 'mailto:abhay.prabhakar.93@gmail.com?subject=Portfolio%20Inquiry%20%E2%80%93%20Abhay%20Prabhakar&body=Hi%20Abhay,%20I%27d%20like%20to%20connect%20about...';
+          }} aria-label="Email Abhay Prabhakar" className="p-3 rounded-full bg-card hover:bg-primary/20 transition-all duration-300 hover:scale-110 shadow-card">
               <Mail className="w-6 h-6 text-primary" />
             </a>
           </div>
 
           {/* Scroll Indicator */}
           <div className="animate-bounce">
-            <ChevronDown 
-              className="w-8 h-8 text-primary mx-auto cursor-pointer hover:text-primary-glow transition-colors"
-              onClick={() => onSectionChange("about")}
-            />
+            <ChevronDown className="w-8 h-8 text-primary mx-auto cursor-pointer hover:text-primary-glow transition-colors" onClick={() => onSectionChange("about")} />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
