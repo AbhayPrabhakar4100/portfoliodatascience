@@ -28,7 +28,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 animate-fade-in">
-            About <span className="bg-primary-gradient bg-clip-text text-transparent">I am Abhay Prabhakar, a Data Scientist with extensive experience in fraud analytics and Generative AI. My work spans from architecting Snowflake data sets to building XGBoost and LLM pipelines that save millions in fraud prevention.</span>
+            About <span className="bg-primary-gradient bg-clip-text text-transparent">Me</span>
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -42,9 +42,8 @@ const AboutSection = () => {
                   Snowflake data lakes to building XGBoost and LLM pipelines that save millions in fraud prevention.
                 </p>
                 <p>
-                  With expertise across <span className="text-primary">Python, SQL, AWS/GCP</span>, and real-time ML inference, 
-                  I thrive on creating data-driven solutions that deliver measurable impact. My passion lies in 
-                  transforming complex data challenges into elegant, scalable solutions.
+                  Skilled in <span className="text-primary">Python, SQL, AWS, and GCP</span>, I specialize in building scalable, 
+                  real-time ML solutions that turn arcane data challenges into measurable business impact.
                 </p>
                 <p>
                   Throughout my career, I've had the privilege of working with industry leaders like 
@@ -101,7 +100,7 @@ const AboutSection = () => {
             <Card className="bg-card-gradient border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 text-center">
               <CardContent className="p-8">
                 <div className="text-3xl font-bold text-primary mb-2">500M+</div>
-                <div className="text-muted-foreground">Dataset Architected From Multiple So</div>
+                <div className="text-muted-foreground">Dataset Architected From Multiple Sources</div>
               </CardContent>
             </Card>
           </div>
