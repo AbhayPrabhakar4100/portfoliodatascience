@@ -17,10 +17,15 @@ const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
     { id: "contact", label: "Contact" },
+    { id: "resume", label: "Resume" },
   ];
 
   const handleNavClick = (section: string) => {
-    onSectionChange(section);
+    if (section === "resume") {
+      window.open("/abhay-resume.png", "_blank");
+    } else {
+      onSectionChange(section);
+    }
     setIsMenuOpen(false);
   };
 
