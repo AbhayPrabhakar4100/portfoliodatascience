@@ -22,7 +22,7 @@ const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
 
   const handleNavClick = (section: string) => {
     if (section === "resume") {
-      window.open("/abhay-resume.png", "_blank");
+      onSectionChange("about");
     } else {
       onSectionChange(section);
     }
