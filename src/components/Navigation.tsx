@@ -21,11 +21,7 @@ const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
   ];
 
   const handleNavClick = (section: string) => {
-    if (section === "resume") {
-      onSectionChange("about");
-    } else {
-      onSectionChange(section);
-    }
+    onSectionChange(section);
     setIsMenuOpen(false);
   };
 

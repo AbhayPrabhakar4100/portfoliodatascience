@@ -106,7 +106,7 @@ const AboutSection = () => {
           </div>
 
           {/* Resume Download Section */}
-          <div className="mt-16 text-center animate-fade-in">
+          <div id="resume" className="mt-16 text-center animate-fade-in">
             <Card className="bg-card-gradient border-border shadow-card hover:shadow-primary transition-all duration-300 max-w-md mx-auto">
               <CardContent className="p-8">
                 <div className="mb-4">
