@@ -1,13 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { GraduationCap, Calendar, Download } from "lucide-react";
+import { GraduationCap, Calendar } from "lucide-react";
 const AboutSection = () => {
-  const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = 'https://drive.google.com/uc?export=download&id=1Nn1jmBsdHxN3pftRO3qy6dJ3Hq9E9_fJ';
-    link.download = 'Abhay_Prabhakar_Resume.png';
-    link.click();
-  };
   const education = [{
     degree: "MS Data Science & Analytics",
     institution: "Georgia State University",
@@ -105,21 +98,6 @@ const AboutSection = () => {
             </Card>
           </div>
 
-          {/* Resume Download Section */}
-          <div id="resume" className="mt-16 text-center animate-fade-in">
-            <Card className="bg-card-gradient border-border shadow-card hover:shadow-primary transition-all duration-300 max-w-md mx-auto">
-              <CardContent className="p-8">
-                <div className="mb-4">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Download Resume</h3>
-                  <p className="text-muted-foreground">Get a copy of my detailed resume</p>
-                </div>
-                <Button onClick={handleResumeDownload} className="bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
-                  <Download className="w-5 h-5 mr-2" />
-                  Download Resume
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </section>;
