@@ -22,15 +22,25 @@ const Index = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["home", "about", "resume", "experience", "projects", "skills", "contact"];
-      const scrollPosition = window.scrollY + 100;
+      const scrollPosition = window.scrollY + 200; // Increased offset for better detection
+      
+      // Check if we're near the bottom of the page for contact section
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const isNearBottom = window.scrollY + windowHeight >= documentHeight - 100;
+      
+      if (isNearBottom) {
+        setActiveSection("contact");
+        return;
+      }
 
-      for (const section of sections) {
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
         const element = document.getElementById(section);
         if (element) {
           const offsetTop = element.offsetTop;
-          const offsetHeight = element.offsetHeight;
           
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (scrollPosition >= offsetTop) {
             setActiveSection(section);
             break;
           }

@@ -13,11 +13,11 @@ const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
+    { id: "resume", label: "Resume" },
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
     { id: "contact", label: "Contact" },
-    { id: "resume", label: "Resume" },
   ];
 
   const handleNavClick = (section: string) => {
