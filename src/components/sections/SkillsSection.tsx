@@ -181,20 +181,20 @@ const SkillsSection = () => {
           <div className="text-center animate-fade-in">
             <h3 className="text-2xl font-semibold mb-6">Key Achievements</h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card">
+              <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card hover:shadow-primary transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="text-2xl font-bold text-primary mb-2">2+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
-              <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card">
+              <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="text-2xl font-bold text-accent mb-2">15+</div>
                 <div className="text-sm text-muted-foreground">ML Models Deployed</div>
               </div>
-              <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card">
+              <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card hover:shadow-primary transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="text-2xl font-bold text-primary mb-2">90%+</div>
                 <div className="text-sm text-muted-foreground">Model Accuracy</div>
               </div>
-              <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card">
-                <div className="text-2xl font-bold text-accent mb-2">100M+</div>
+              <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 cursor-pointer">
+                <div className="text-2xl font-bold text-accent mb-2">500M+</div>
                 <div className="text-sm text-muted-foreground">Records Processed</div>
               </div>
             </div>
