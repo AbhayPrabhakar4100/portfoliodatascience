@@ -39,7 +39,7 @@ const AboutSection = () => {
                   real-time ML solutions that turn arcane data challenges into measurable business impact.
                 </p>
                 <p>
-                  I've worked with industry leaders, including <span className="text-accent">Equifax, Truist, and MetLife</span>, delivering data-driven solutions across product analytics, customer insights, and fraud prevention, driving measurable business value at scale.
+                  Throughout my career, I've worked with industry leaders, including <span className="text-accent">Equifax, Truist, and MetLife</span>, delivering data-driven solutions across product analytics, customer insights, and fraud prevention, driving measurable business value at scale.
                 </p>
               </div>
             </div>
