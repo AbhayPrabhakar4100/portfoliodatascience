@@ -40,7 +40,7 @@ const HeroSection = ({
               Data Scientist
             </span>
             <br />
-            <span className="text-foreground">Fraud Analytics</span>
+            <span className="text-foreground">Machine learning and Analytics</span>
             <br />
             <span className="bg-accent-gradient bg-clip-text text-transparent">
               Generative AI
