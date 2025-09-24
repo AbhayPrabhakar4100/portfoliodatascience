@@ -31,7 +31,7 @@ const AboutSection = () => {
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
                   I am <span className="text-foreground font-semibold">Abhay Prabhakar</span>, a Data Scientist with 
-                  extensive experience in fraud analytics and Generative AI. My work spans from architecting 
+                  extensive experience in fraud and product analytics and Generative AI. My work spans from architecting 
                   Snowflake data lakes to building XGBoost and LLM pipelines that save millions in fraud prevention.
                 </p>
                 <p>
