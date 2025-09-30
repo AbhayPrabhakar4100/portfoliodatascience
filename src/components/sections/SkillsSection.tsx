@@ -194,7 +194,7 @@ const SkillsSection = () => {
                 <div className="text-sm text-muted-foreground">Model Accuracy</div>
               </div>
               <div className="p-6 bg-card-gradient rounded-lg border border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 cursor-pointer">
-                <div className="text-2xl font-bold text-accent mb-2">2B+</div>
+                <div className="text-2xl font-bold text-accent mb-2">15B+</div>
                 <div className="text-sm text-muted-foreground">Records Processed</div>
               </div>
             </div>

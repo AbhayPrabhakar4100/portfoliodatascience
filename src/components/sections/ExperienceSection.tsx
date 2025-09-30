@@ -9,13 +9,13 @@ const ExperienceSection = () => {
       role: "Data Science intern",
       period: "May 2025–Aug 2025",
       achievements: [
-        "Built a unified 2B+ row Snowflake dataset (44 features) via JSON parsing & schema unification, cutting ML iteration time by 60%.",
+        "Built a unified 15B+ row Snowflake dataset (44 features) via JSON parsing & schema unification, cutting ML iteration time by 60%.",
         "Productionized a domain-normalization SQL UDF scaling from 1→40+ domains, tripling email fraud detection coverage (0.35% → 0.95%).",
         "Delivered a 2% accuracy lift in XGBoost fraud model (projected $3M+ annual savings).",
         "Partnered with ML engineers to achieve <50 ms real-time inference latency at 99.9% uptime."
       ],
       technologies: ["Snowflake", "XGBoost", "Python", "AWS", "Real-time ML"],
-      impact: "Created a 2B+ row dataset from multiple sources",
+      impact: "Created a 15B+ row dataset from multiple sources",
       color: "primary"
     },
     {
