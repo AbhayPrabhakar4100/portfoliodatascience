@@ -27,19 +27,16 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Personal Bio */}
             <div className="animate-fade-in-left">
-              <h3 className="text-2xl font-semibold mb-6 text-primary">Who I Am</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-primary">Who Am I?</h3>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  I am <span className="text-foreground font-semibold">Abhay Prabhakar</span>, a Data Scientist with 
-                  extensive experience in Fraud, Product Analytics, and Generative AI. My work spans from architecting 
-                  Snowflake data lakes to building XGBoost and LLM pipelines that save millions in fraud prevention.
+                  I'm <span className="text-foreground font-semibold">Abhay Prabhakar</span>, a Data Scientist with hands-on experience in Fraud Detection, Product Analytics, and Generative AI. My work spans from architecting Snowflake data lakes to developing XGBoost and LLM pipelines that have prevented millions in fraud losses.
                 </p>
                 <p>
-                  Skilled in <span className="text-primary">Python, SQL, AWS, and GCP</span>, I specialize in building scalable, 
-                  real-time ML solutions that turn arcane data challenges into measurable business impact.
+                  Proficient in <span className="text-primary">Python, SQL, AWS, and GCP</span>, I specialize in designing scalable, real-time ML systems that turn complex data into measurable business outcomes.
                 </p>
                 <p>
-                  Throughout my career, I've worked with industry leaders, including <span className="text-accent">Equifax, Truist, and MetLife</span>, delivering data-driven solutions across product analytics, customer insights, and fraud prevention, driving measurable business value at scale.
+                  Over my career, I've collaborated with leading organizations such as <span className="text-accent">Equifax, Truist, and MetLife</span>, delivering data-driven solutions across fraud prevention, customer analytics, and AI-powered automation, driving measurable impact at scale.
                 </p>
               </div>
             </div>
