@@ -8,53 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Portfolio Dark Theme Design System */
-    --background: 215 28% 7%;
-    --foreground: 210 40% 98%;
+    /* Bold & Modern Design System */
+    --background: 240 30% 5%;
+    --foreground: 0 0% 100%;
 
-    --card: 215 25% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 240 25% 8%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 215 25% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 25% 8%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 185 84% 55%;
-    --primary-foreground: 215 28% 7%;
+    --primary: 14 100% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 20% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 240 20% 12%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 20% 15%;
-    --muted-foreground: 215 15% 65%;
+    --muted: 240 15% 15%;
+    --muted-foreground: 240 5% 70%;
 
-    --accent: 280 65% 65%;
-    --accent-foreground: 215 28% 7%;
+    --accent: 280 100% 70%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 20%;
-    --input: 215 20% 15%;
-    --ring: 185 84% 55%;
+    --border: 240 20% 18%;
+    --input: 240 20% 12%;
+    --ring: 14 100% 60%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Custom Portfolio Colors */
-    --hero-gradient-start: 215 28% 7%;
-    --hero-gradient-end: 215 25% 10%;
-    --primary-glow: 185 84% 70%;
-    --accent-glow: 280 65% 80%;
+    /* Bold Modern Colors */
+    --hero-gradient-start: 240 30% 5%;
+    --hero-gradient-end: 250 40% 10%;
+    --primary-glow: 14 100% 70%;
+    --accent-glow: 280 100% 80%;
     
-    /* Shadows and Effects */
-    --shadow-primary: 0 10px 40px -15px hsl(185 84% 55% / 0.4);
-    --shadow-accent: 0 10px 40px -15px hsl(280 65% 65% / 0.3);
-    --shadow-card: 0 4px 20px -8px hsl(0 0% 0% / 0.3);
+    /* Dramatic Shadows and Effects */
+    --shadow-primary: 0 20px 60px -10px hsl(14 100% 60% / 0.6);
+    --shadow-accent: 0 20px 60px -10px hsl(280 100% 70% / 0.5);
+    --shadow-card: 0 10px 40px -8px hsl(0 0% 0% / 0.6);
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(185 84% 55%), hsl(185 84% 70%));
-    --gradient-accent: linear-gradient(135deg, hsl(280 65% 65%), hsl(280 65% 80%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 28% 7%), hsl(215 25% 10%));
-    --gradient-card: linear-gradient(145deg, hsl(215 25% 10%), hsl(215 20% 15%));
+    /* Bold Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(14 100% 60%), hsl(25 100% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(280 100% 70%), hsl(260 100% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(240 30% 5%), hsl(250 40% 10%));
+    --gradient-card: linear-gradient(145deg, hsl(240 25% 8%), hsl(240 20% 12%));
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
