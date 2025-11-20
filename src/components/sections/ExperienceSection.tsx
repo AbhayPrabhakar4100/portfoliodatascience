@@ -5,59 +5,59 @@ import { Building2, Calendar, TrendingUp } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: "Kount – Equifax",
-      role: "Data Science intern",
+      company: "Kount – an Equifax Company",
+      role: "Data Science Intern",
       period: "May 2025–Aug 2025",
       achievements: [
-        "Built a unified 15B+ row Snowflake dataset (44 features) via JSON parsing & schema unification, cutting ML iteration time by 60%.",
-        "Productionized a domain-normalization SQL UDF scaling from 1→40+ domains, tripling email fraud detection coverage (0.35% → 0.95%).",
-        "Delivered a 2% accuracy lift in XGBoost fraud model (projected $3M+ annual savings).",
-        "Partnered with ML engineers to achieve <50 ms real-time inference latency at 99.9% uptime."
+        "Built Snowflake ETL pipeline aggregating 15B+ payment transaction records into a unified 44-feature dataset with 3 custom engineered features, reducing ML iteration time by 60%.",
+        "Designed A/B experiments measuring campaign performance of custom features within XGBoost models, improving accuracy by 2% and projected to save $3M+ annually through statistical hypothesis testing.",
+        "Partnered with cross-functional engineering teams to optimize real-time inference latency below 50ms at 99.9% uptime.",
+        "Productionized domain-normalization UDF scaling from 1 to 40+ domains, raising detection coverage from 0.35% to 0.95%."
       ],
-      technologies: ["Snowflake", "XGBoost", "Python", "AWS", "Real-time ML"],
-      impact: "Created a 15B+ row dataset from multiple sources",
+      technologies: ["Snowflake", "XGBoost", "Python", "A/B Testing", "ETL"],
+      impact: "15B+ payment transactions processed",
       color: "primary"
     },
     {
-      company: "Georgia State University x Truist Bank",
-      role: "Research Data Scientist",
+      company: "Georgia State University – Truist Bank",
+      role: "Graduate Research Assistant",
       period: "Aug 2024–May 2025",
       achievements: [
-        "Rebalanced a 1:99 fraud ratio on 500K+ mortgages with engineered features & SMOTE; built XGBoost model with 80% recall & 85% precision, saving $30M+.",
-        "Generated 8K+ synthetic applicants using custom Llama 3.1 + LangChain pipeline (82% realistic), enabling robust fraud screening.",
-        "Built interactive executive dashboards that accelerated adoption of new fraud policies and cut charge-back rates by 12%.",
-        "Designed advanced feature engineering workflows powering next-gen fraud prevention models."
+        "Curated 500K+ consumer credit applications; engineered loan-to-value and debt-to-income features with SMOTE rebalancing for 1:99 fraud ratio leading to a 20% lift in the minority class detection.",
+        "Led cross-functional 4-person team to build XGBoost ensemble achieving 80% recall and 85% precision, identifying 1,200 fraudulent applications with projected savings of $30M+.",
+        "Developed custom Llama 3.1 pipeline generating 8K+ synthetic applicants (82% cosine similarity), then deployed LangChain AI agent for real-time screening automating verification checks.",
+        "Created Tableau dashboards tracking key performance metrics and fraud patterns that informed business strategy, reducing chargebacks by 12%."
       ],
-      technologies: ["XGBoost", "SMOTE", "Llama 3.1", "Python", "Dashboards"],
-      impact: "Estimated $30M+ Fraud Prevention",
+      technologies: ["XGBoost", "SMOTE", "Llama 3.1", "LangChain", "Tableau"],
+      impact: "$30M+ projected savings",
       color: "accent"
     },
     {
-      company: "Institute of Economic Growth",
-      role: "Data Science Researcher",
+      company: "Institute of Economic Growth (IEG)",
+      role: "Research Data Scientist",
       period: "Feb 2023–Jul 2024",
       achievements: [
-        "Developed Random Forest for GST tax fraud detection, boosting recall to 85% and accuracy by 45% over legacy rules.",
-        "Automated Spark + Python ML pipelines, cutting manual review workload by 40%.",
-        "Built XGBoost macroeconomic forecasting model (AUC-ROC 0.92) guiding $50M+ investment decisions.",
-        "Scaled large data workflows and delivered Tableau dashboards adopted by policy analysts & economists."
+        "Developed LightGBM classification models for consumer spending patterns, improving recall to 85% and accuracy by 20% over legacy rule-based system through advanced analytics optimization.",
+        "Automated batch ETL pipeline using Spark and Airflow on GCP BigQuery ensuring data quality and governance, reducing manual processing by 40%.",
+        "Built Prophet time-series forecasting model identifying emerging market trends; collaborated with cross-functional policy teams to integrate findings into Tableau dashboards adopted by analysts.",
+        "Implemented cross-validation and model performance monitoring, improving long-term forecast stability."
       ],
-      technologies: ["Random Forest", "Spark ML", "Python", "Tax Analytics"],
-      impact: "Government Tax Fraud Detection",
+      technologies: ["LightGBM", "Spark", "Airflow", "BigQuery", "Prophet"],
+      impact: "Consumer spending pattern analysis",
       color: "primary"
     },
     {
       company: "MetLife",
-      role: "Data science intern",
+      role: "Data Science Intern",
       period: "Aug 2022–Dec 2022",
       achievements: [
-        "Deployed BERT NLP pipeline on 100K+ customer comments (88% accuracy), shaping 2 new product features.",
-        "Applied LDA topic modeling to identify pain points, lifting NPS by +12 points.",
-        "Built interactive Power BI dashboards for real-time CX sentiment monitoring.",
-        "Delivered actionable insights that drove customer experience optimization initiatives."
+        "Deployed BERT NLP pipeline for customer segmentation classifying 100K+ payment transaction comments at 88% accuracy, identifying sentiment patterns informing 2 product launches.",
+        "Applied LDA topic modeling to uncover customer engagement pain points, contributing to 12-point NPS increase.",
+        "Partnered with cross-functional product teams to define success metrics measuring campaign performance and run A/B tests aligned with business objectives.",
+        "Built Business Intelligence dashboard in Tableau tracking real-time key performance metrics for executive monitoring."
       ],
-      technologies: ["BERT", "NLP", "LDA", "Power BI", "Python"],
-      impact: "Customer Experience Enhancement",
+      technologies: ["BERT", "NLP", "LDA", "Tableau", "A/B Testing"],
+      impact: "12-point NPS increase",
       color: "accent"
     }
   ];
