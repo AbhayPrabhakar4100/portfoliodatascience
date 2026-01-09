@@ -33,7 +33,7 @@ const ExperienceSection = () => {
       color: "accent"
     },
     {
-      company: "Institute of Economic Growth (IEG)",
+      company: "IEG with SAU (South Asian University)",
       role: "Research Data Scientist",
       period: "Feb 2023–Jul 2024",
       achievements: [
