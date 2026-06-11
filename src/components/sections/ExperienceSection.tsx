@@ -5,60 +5,71 @@ import { Building2, Calendar, TrendingUp } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: "Kount – an Equifax Company",
-      role: "Data Science Intern",
-      period: "May 2025–Aug 2025",
+      company: "Visa (via Blend360)",
+      role: "Data Scientist",
+      period: "Atlanta, GA · Jan 2026 – Present",
       achievements: [
-        "Built Snowflake ETL pipeline aggregating 15B+ payment transaction records into a unified 44-feature dataset with 3 custom engineered features, reducing ML iteration time by 60%.",
-        "Designed A/B experiments measuring campaign performance of custom features within XGBoost models, improving accuracy by 2% and projected to save $3M+ annually through statistical hypothesis testing.",
-        "Partnered with cross-functional engineering teams to optimize real-time inference latency below 50ms at 99.9% uptime.",
-        "Productionized domain-normalization UDF scaling from 1 to 40+ domains, raising detection coverage from 0.35% to 0.95%."
+        "Isolated ~$7M in annualized incremental spend from a spend-and-get campaign with a difference-in-differences design and placebo validation across 355K+ cardholders.",
+        "Cut campaign outreach ~30% while retaining ~90% of incremental spend with a Qini-validated Causal Forest uplift model (100K-cardholder A/B test), tiering cardholders by lift and forecasting per-tier incremental spend into a dollar-ranked budget.",
+        "Flagged at-risk cardholders before closure with an XGBoost model (0.87 AUC, top decile capturing ~60% of closures) on spend velocity, utilization, decline frequency, FICO, and tenure, feeding retention outreach.",
+        "Built automated Tableau campaign-performance dashboards tracking lift, campaign ROI, and retention guardrails, giving marketing partners self-serve reads between experiments."
       ],
-      technologies: ["Snowflake", "XGBoost", "Python", "A/B Testing", "ETL"],
-      impact: "15B+ payment transactions processed",
+      technologies: ["Causal Forest", "XGBoost", "Diff-in-Diff", "Tableau", "A/B Testing"],
+      impact: "~$7M annualized incremental spend isolated",
       color: "primary"
     },
     {
-      company: "Georgia State University – Truist Bank",
-      role: "Graduate Research Assistant",
-      period: "Aug 2024–May 2025",
+      company: "Equifax",
+      role: "Data Science Intern",
+      period: "Boise, ID · May 2025 – Aug 2025",
       achievements: [
-        "Curated 500K+ consumer credit applications; engineered loan-to-value and debt-to-income features with SMOTE rebalancing for 1:99 fraud ratio leading to a 20% lift in the minority class detection.",
-        "Led cross-functional 4-person team to build XGBoost ensemble achieving 80% recall and 85% precision, identifying 1,200 fraudulent applications with projected savings of $30M+.",
-        "Developed custom Llama 3.1 pipeline generating 8K+ synthetic applicants (82% cosine similarity), then deployed LangChain AI agent for real-time screening automating verification checks.",
-        "Created Tableau dashboards tracking key performance metrics and fraud patterns that informed business strategy, reducing chargebacks by 12%."
+        "Improved response efficiency ~2.2x on a 1M+ prospect consumer financial-offer campaign, with the top two deciles capturing ~68% of responders, using a calibrated gradient-boosted propensity model in Equifax Ignite.",
+        "Measured ~+1.8 pp incremental response lift with power-sized test-versus-control holdouts, then analyzed lift by SHAP-informed driver segment, showing the highest-propensity prospects were not always the most persuadable.",
+        "Built reusable SQL/Python analysis pipelines in Equifax Ignite automating decile-lift, responder-capture, and test-versus-control readouts, delivering experiment insights at scale for marketing stakeholders."
       ],
-      technologies: ["XGBoost", "SMOTE", "Llama 3.1", "LangChain", "Tableau"],
-      impact: "$30M+ projected savings",
+      technologies: ["Equifax Ignite", "Gradient Boosting", "SHAP", "SQL", "Python"],
+      impact: "~2.2x response efficiency on 1M+ prospects",
       color: "accent"
     },
     {
-      company: "SAU (South Asian University)",
-      role: "Research Data Scientist",
-      period: "Feb 2023–Jul 2024",
+      company: "Truist Bank (Graduate Research Assistant, GSU)",
+      role: "Data Scientist",
+      period: "Atlanta, GA · Aug 2024 – May 2025",
       achievements: [
-        "Developed LightGBM classification models for consumer spending patterns, improving recall to 85% and accuracy by 20% over legacy rule-based system through advanced analytics optimization.",
-        "Automated batch ETL pipeline using Spark and Airflow on GCP BigQuery ensuring data quality and governance, reducing manual processing by 40%.",
-        "Built Prophet time-series forecasting model identifying emerging market trends; collaborated with cross-functional policy teams to integrate findings into Tableau dashboards adopted by analysts.",
-        "Implemented cross-validation and model performance monitoring, improving long-term forecast stability."
+        "Led a 4-person team segmenting 500K+ mortgage customers into 5 cohorts with silhouette-tuned K-means on equity, payment behavior, tenure, and mortgage-rate gap to target refinance and home-equity cross-sell.",
+        "Built an interpretable multivariate GLM for refinance/home-equity response retaining ~95% of a gradient-boosted model's AUC, giving stakeholders transparent propensity drivers while preserving most of the predictive performance.",
+        "Estimated cross-sell incrementality by cohort with a mail-versus-control design, isolating a ~3 pp response lift in high-equity, high-rate-gap segments while low-rate-gap cohorts showed near-zero, sharpening mail targeting.",
+        "Forecasted monthly refinance and home-equity production to within ~8% MAPE with a funnel model decomposing response, approval, and booking rates, presented to marketing leadership and adopted for quarterly outreach-volume and budget planning."
       ],
-      technologies: ["LightGBM", "Spark", "Airflow", "BigQuery", "Prophet"],
-      impact: "Consumer spending pattern analysis",
+      technologies: ["K-means", "GLM", "Gradient Boosting", "Forecasting", "Segmentation"],
+      impact: "~3 pp response lift in target cohorts",
       color: "primary"
+    },
+    {
+      company: "South Asian University (SAU)",
+      role: "Research Data Scientist",
+      period: "New Delhi, India · Feb 2023 – Jul 2024",
+      achievements: [
+        "Identified an ~18% qualified-applicant expansion opportunity by applying K-means geographic segmentation across feeder schools, travel distance, and historical enrollment yield, pinpointing under-targeted high-yield regions.",
+        "Concentrated ~70% of eventual enrollees in the top 3 deciles with a gradient-boosted prospect-to-enroll scoring model on 30K+ inquiries across the inquiry → application → admit → enroll funnel.",
+        "Lifted enrollment yield ~6% by translating funnel, segment, and channel-mix analysis into recruitment recommendations adopted by enrollment leadership."
+      ],
+      technologies: ["K-means", "Gradient Boosting", "Funnel Analysis", "Segmentation"],
+      impact: "~6% enrollment yield lift",
+      color: "accent"
     },
     {
       company: "MetLife",
       role: "Data Science Intern",
-      period: "Aug 2022–Dec 2022",
+      period: "New Delhi, India · Aug 2022 – Dec 2022",
       achievements: [
-        "Deployed BERT NLP pipeline for customer segmentation classifying 100K+ payment transaction comments at 88% accuracy, identifying sentiment patterns informing 2 product launches.",
-        "Applied LDA topic modeling to uncover customer engagement pain points, contributing to 12-point NPS increase.",
-        "Partnered with cross-functional product teams to define success metrics measuring campaign performance and run A/B tests aligned with business objectives.",
-        "Built Business Intelligence dashboard in Tableau tracking real-time key performance metrics for executive monitoring."
+        "Cut manual review of 100K+ call and survey records ~40% with a BERT topic-modeling pipeline converting unstructured feedback into structured churn-driver themes for retention analysis.",
+        "Linked complaint themes to retention and service KPIs, helping CX and marketing teams target high-friction issues like claims delays, pricing, and service dissatisfaction.",
+        "Automated Tableau and Power BI dashboards tracking feedback volume, sentiment, themes, and retention-risk drivers, giving stakeholders self-serve reads to prioritize follow-up."
       ],
-      technologies: ["BERT", "NLP", "LDA", "Tableau", "A/B Testing"],
-      impact: "12-point NPS increase",
-      color: "accent"
+      technologies: ["BERT", "Topic Modeling", "Tableau", "Power BI", "NLP"],
+      impact: "~40% reduction in manual review",
+      color: "primary"
     }
   ];
 
