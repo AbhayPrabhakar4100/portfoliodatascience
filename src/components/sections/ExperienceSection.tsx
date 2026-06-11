@@ -9,40 +9,39 @@ const ExperienceSection = () => {
       role: "Data Scientist",
       period: "Atlanta, GA · Jan 2026 – Present",
       achievements: [
-        "Isolated ~$7M in annualized incremental spend from a spend-and-get campaign with a difference-in-differences design and placebo validation across 355K+ cardholders.",
-        "Cut campaign outreach ~30% while retaining ~90% of incremental spend with a Qini-validated Causal Forest uplift model (100K-cardholder A/B test), tiering cardholders by lift and forecasting per-tier incremental spend into a dollar-ranked budget.",
-        "Flagged at-risk cardholders before closure with an XGBoost model (0.87 AUC, top decile capturing ~60% of closures) on spend velocity, utilization, decline frequency, FICO, and tenure, feeding retention outreach.",
-        "Built automated Tableau campaign-performance dashboards tracking lift, campaign ROI, and retention guardrails, giving marketing partners self-serve reads between experiments."
+        "Built a calibrated XGBoost origination-fraud model (0.89 AUC, top decile capturing ~62% of confirmed fraud), with a cost-sensitive operating point focusing review on the highest credit-line exposure.",
+        "Concentrated ~55% of confirmed first-party abuse in the top 10% of accounts with a credit-line-abuse scoring layer on utilization velocity, reversals, spend bursts, and cash-like MCC mix; K-means surfaced distinct bust-out signatures.",
+        "Built an XGBoost early-attrition model (0.87 AUC) on spend decay, utilization, and decline frequency; a randomized holdout of top-decile outreach measured a ~7 pp incremental save rate over control.",
+        "Cut campaign outreach ~30% while holding ~90% of incremental margin with a Causal Forest uplift model and difference-in-differences design ranking cardholders by individual lift (100K-cardholder A/B test)."
       ],
-      technologies: ["Causal Forest", "XGBoost", "Diff-in-Diff", "Tableau", "A/B Testing"],
-      impact: "~$7M annualized incremental spend isolated",
+      technologies: ["XGBoost", "Causal Forest", "K-means", "Diff-in-Diff", "SHAP"],
+      impact: "Top decile captures ~62% of confirmed fraud",
       color: "primary"
     },
     {
       company: "Equifax",
-      role: "Data Science Intern",
+      role: "Fraud Data Science Intern",
       period: "Boise, ID · May 2025 – Aug 2025",
       achievements: [
-        "Improved response efficiency ~2.2x on a 1M+ prospect consumer financial-offer campaign, with the top two deciles capturing ~68% of responders, using a calibrated gradient-boosted propensity model in Equifax Ignite.",
-        "Measured ~+1.8 pp incremental response lift with power-sized test-versus-control holdouts, then analyzed lift by SHAP-informed driver segment, showing the highest-propensity prospects were not always the most persuadable.",
-        "Built reusable SQL/Python analysis pipelines in Equifax Ignite automating decile-lift, responder-capture, and test-versus-control readouts, delivering experiment insights at scale for marketing stakeholders."
+        "Improved email-tumbling fraud recall from 0.33 to 0.95 by normalizing emails across 40+ providers over 15B transactions, linking fake-distinct accounts into identity clusters with detectable velocity and abuse patterns.",
+        "Engineered a Simpson Diversity Index feature to quantify coordination inside an identity cluster, ranking top-5 by SHAP in the production fraud model.",
+        "Improved fraud capture +18% at a fixed false-positive rate on out-of-time data with a LightGBM challenger that caught a coordinated-abuse pattern the incumbent missed."
       ],
-      technologies: ["Equifax Ignite", "Gradient Boosting", "SHAP", "SQL", "Python"],
-      impact: "~2.2x response efficiency on 1M+ prospects",
+      technologies: ["LightGBM", "SHAP", "Identity Resolution", "SQL", "Python"],
+      impact: "Email-tumbling recall 0.33 → 0.95",
       color: "accent"
     },
     {
       company: "Truist Bank (Graduate Research Assistant, GSU)",
-      role: "Data Scientist",
+      role: "Fraud Risk Data Scientist",
       period: "Atlanta, GA · Aug 2024 – May 2025",
       achievements: [
-        "Led a 4-person team segmenting 500K+ mortgage customers into 5 cohorts with silhouette-tuned K-means on equity, payment behavior, tenure, and mortgage-rate gap to target refinance and home-equity cross-sell.",
-        "Built an interpretable multivariate GLM for refinance/home-equity response retaining ~95% of a gradient-boosted model's AUC, giving stakeholders transparent propensity drivers while preserving most of the predictive performance.",
-        "Estimated cross-sell incrementality by cohort with a mail-versus-control design, isolating a ~3 pp response lift in high-equity, high-rate-gap segments while low-rate-gap cohorts showed near-zero, sharpening mail targeting.",
-        "Forecasted monthly refinance and home-equity production to within ~8% MAPE with a funnel model decomposing response, approval, and booking rates, presented to marketing leadership and adopted for quarterly outreach-volume and budget planning."
+        "Led a 4-person team building a 500K-record mortgage application dataset with 24 fraud-risk features designed to catch fraud without penalizing legitimate borrowers.",
+        "Reached 80% recall at 85% precision (~1,200 high-risk originations surfaced) with a cost-sensitive XGBoost model whose SHAP explanations gave underwriters a per-case reason code.",
+        "Showed via SHAP that fraud is not uniform: occupancy misrepresentation clustered in refinances, income misrepresentation in first-time-buyer applications, letting the team route review by type."
       ],
-      technologies: ["K-means", "GLM", "Gradient Boosting", "Forecasting", "Segmentation"],
-      impact: "~3 pp response lift in target cohorts",
+      technologies: ["XGBoost", "SHAP", "Cost-Sensitive Learning", "Feature Engineering"],
+      impact: "80% recall at 85% precision on mortgage fraud",
       color: "primary"
     },
     {
@@ -50,25 +49,25 @@ const ExperienceSection = () => {
       role: "Research Data Scientist",
       period: "New Delhi, India · Feb 2023 – Jul 2024",
       achievements: [
-        "Identified an ~18% qualified-applicant expansion opportunity by applying K-means geographic segmentation across feeder schools, travel distance, and historical enrollment yield, pinpointing under-targeted high-yield regions.",
-        "Concentrated ~70% of eventual enrollees in the top 3 deciles with a gradient-boosted prospect-to-enroll scoring model on 30K+ inquiries across the inquiry → application → admit → enroll funnel.",
-        "Lifted enrollment yield ~6% by translating funnel, segment, and channel-mix analysis into recruitment recommendations adopted by enrollment leadership."
+        "Built a LightGBM tax-fraud model on 1.4M invoices (85% recall vs. a rule-based baseline) using taxpayer-behavior, input-tax-credit, and invoice-pattern features to flag evasion random audits missed.",
+        "Layered an invoice-network analysis to surface circular-trading rings (A → B → C → A loops) that single-taxpayer scoring could not see, extending coverage to coordinated evasion.",
+        "Concentrated ~58% of confirmed fraud in the top 10% of taxpayers via audit-prioritization tiers, letting auditors recover most fraud while reviewing ~30% of prior volume."
       ],
-      technologies: ["K-means", "Gradient Boosting", "Funnel Analysis", "Segmentation"],
-      impact: "~6% enrollment yield lift",
+      technologies: ["LightGBM", "Network Analysis", "Python", "SQL"],
+      impact: "~58% of fraud in top 10% of taxpayers",
       color: "accent"
     },
     {
       company: "MetLife",
-      role: "Data Science Intern",
+      role: "Fraud Data Science Intern",
       period: "New Delhi, India · Aug 2022 – Dec 2022",
       achievements: [
-        "Cut manual review of 100K+ call and survey records ~40% with a BERT topic-modeling pipeline converting unstructured feedback into structured churn-driver themes for retention analysis.",
-        "Linked complaint themes to retention and service KPIs, helping CX and marketing teams target high-friction issues like claims delays, pricing, and service dissatisfaction.",
-        "Automated Tableau and Power BI dashboards tracking feedback volume, sentiment, themes, and retention-risk drivers, giving stakeholders self-serve reads to prioritize follow-up."
+        "Built an NLP pipeline over 100K+ adjuster notes, fine-tuning BERT with topic-model features to surface staged-accident and inflated-severity narratives keyword search missed.",
+        "Flagged ~22% more suspicious claims than the keyword baseline by turning unstructured narratives into ranked risk signals for investigators.",
+        "Built Tableau and Power BI dashboards tracking flagged-claim volume, fraud themes, and investigator hit-rate for the SIU team."
       ],
-      technologies: ["BERT", "Topic Modeling", "Tableau", "Power BI", "NLP"],
-      impact: "~40% reduction in manual review",
+      technologies: ["BERT", "NLP", "Topic Modeling", "Tableau", "Power BI"],
+      impact: "~22% more suspicious claims flagged vs. baseline",
       color: "primary"
     }
   ];
