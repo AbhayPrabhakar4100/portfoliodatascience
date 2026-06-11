@@ -1,14 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import resumeAsset from "@/assets/Abhay_Prabhakar_Resume.pdf.asset.json";
 
 const ResumeSection = () => {
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/uc?export=download&id=1Nn1jmBsdHxN3pftRO3qy6dJ3Hq9E9_fJ';
-    link.download = 'Abhay_Prabhakar_Resume.png';
+    link.href = resumeAsset.url;
+    link.download = 'Abhay_Prabhakar_Resume.pdf';
     link.click();
   };
+
 
   return (
     <section className="py-20 bg-muted/50">
