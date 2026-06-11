@@ -75,8 +75,8 @@ const AboutSection = () => {
           <div className="mt-16 grid md:grid-cols-3 gap-8 animate-fade-in">
             <Card className="bg-card-gradient border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 text-center">
               <CardContent className="p-8">
-                <div className="text-3xl font-bold text-primary mb-2">$30M+</div>
-                <div className="text-muted-foreground">Estimated Fraud Losses Prevented</div>
+                <div className="text-3xl font-bold text-primary mb-2">$10M+</div>
+                <div className="text-muted-foreground">Estimated Impact Made</div>
               </CardContent>
             </Card>
             <Card className="bg-card-gradient border-border shadow-card hover:shadow-accent transition-all duration-300 hover:scale-105 text-center">
