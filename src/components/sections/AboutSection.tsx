@@ -5,7 +5,7 @@ const AboutSection = () => {
     degree: "MS Data Science & Analytics",
     institution: "Georgia State University",
     period: "2024–2025",
-    status: "In Progress"
+    status: "Completed"
   }, {
     degree: "PG Diploma in Data Analytics",
     institution: "GGSIPU",
