@@ -9,18 +9,18 @@ const ExperienceSection = () => {
       role: "Data Scientist",
       period: "Atlanta, GA · Jan 2026 – Present",
       achievements: [
-        "Built a calibrated XGBoost origination-fraud model (0.89 AUC, top decile capturing ~62% of confirmed fraud), with a cost-sensitive operating point focusing review on the highest credit-line exposure.",
-        "Concentrated ~55% of confirmed first-party abuse in the top 10% of accounts with a credit-line-abuse scoring layer on utilization velocity, reversals, spend bursts, and cash-like MCC mix; K-means surfaced distinct bust-out signatures.",
-        "Built an XGBoost early-attrition model (0.87 AUC) on spend decay, utilization, and decline frequency; a randomized holdout of top-decile outreach measured a ~7 pp incremental save rate over control.",
-        "Cut campaign outreach ~30% while holding ~90% of incremental margin with a Causal Forest uplift model and difference-in-differences design ranking cardholders by individual lift (100K-cardholder A/B test)."
+        "Isolated ~$7M in annualized incremental spend from a spend-and-get campaign with a difference-in-differences design and placebo validation across 355K+ cardholders.",
+        "Cut campaign outreach ~30% while retaining ~90% of incremental spend with a Qini-validated Causal Forest uplift model (100K-cardholder A/B test), tiering cardholders by lift and forecasting per-tier incremental spend into a dollar-ranked budget.",
+        "Flagged at-risk cardholders before closure with an XGBoost model (0.87 AUC, top decile capturing ~60% of closures) on spend velocity, utilization, decline frequency, FICO, and tenure, feeding retention outreach.",
+        "Built automated Tableau campaign-performance dashboards tracking lift, campaign ROI, and retention guardrails, giving stakeholders self-serve reads on what's working."
       ],
-      technologies: ["XGBoost", "Causal Forest", "K-means", "Diff-in-Diff", "SHAP"],
-      impact: "Top decile captures ~62% of confirmed fraud",
+      technologies: ["Causal Forest", "Diff-in-Diff", "XGBoost", "Qini", "Tableau"],
+      impact: "~$7M annualized incremental spend isolated",
       color: "primary"
     },
     {
       company: "Equifax",
-      role: "Fraud Data Science Intern",
+      role: "Data Science Intern",
       period: "Boise, ID · May 2025 – Aug 2025",
       achievements: [
         "Improved email-tumbling fraud recall from 0.33 to 0.95 by normalizing emails across 40+ providers over 15B transactions, linking fake-distinct accounts into identity clusters with detectable velocity and abuse patterns.",
@@ -33,7 +33,7 @@ const ExperienceSection = () => {
     },
     {
       company: "Truist Bank (Graduate Research Assistant, GSU)",
-      role: "Fraud Risk Data Scientist",
+      role: "Data Scientist",
       period: "Atlanta, GA · Aug 2024 – May 2025",
       achievements: [
         "Led a 4-person team building a 500K-record mortgage application dataset with 24 fraud-risk features designed to catch fraud without penalizing legitimate borrowers.",
@@ -59,7 +59,7 @@ const ExperienceSection = () => {
     },
     {
       company: "MetLife",
-      role: "Fraud Data Science Intern",
+      role: "Data Science Intern",
       period: "New Delhi, India · Aug 2022 – Dec 2022",
       achievements: [
         "Built an NLP pipeline over 100K+ adjuster notes, fine-tuning BERT with topic-model features to surface staged-accident and inflated-severity narratives keyword search missed.",
