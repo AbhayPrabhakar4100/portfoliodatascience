@@ -30,13 +30,16 @@ const AboutSection = () => {
               <h3 className="text-2xl font-semibold mb-6 text-primary">Who Am I?</h3>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  I'm <span className="text-foreground font-semibold">Abhay Prabhakar</span>, a Data Scientist with hands-on experience in Fraud Detection, Product Analytics, and Generative AI. My work spans from architecting Snowflake data lakes to developing XGBoost and LLM pipelines that have prevented millions in fraud losses.
+                  I'm <span className="text-foreground font-semibold">Abhay Prabhakar</span>, a Data Scientist on <span className="text-primary">Visa's credit card analytics team</span>, where I measure what marketing actually causes: a difference-in-differences study that isolated ~$7M in annualized incremental spend across 355K+ cardholders, a Qini-validated Causal Forest uplift model that cut campaign outreach ~30% while keeping ~90% of incremental spend, and an XGBoost early-attrition model (0.87 AUC) feeding retention outreach before cardholders close.
                 </p>
                 <p>
-                  Proficient in <span className="text-primary">Python, SQL, AWS, and GCP</span>, I specialize in designing scalable, real-time ML systems that turn complex data into measurable business outcomes.
+                  Before Visa, my work centered on risk modeling in financial services. At <span className="text-accent">Equifax</span>, I built calibrated propensity models for a 1M+ prospect campaign, improving response efficiency ~2.2x, with test-versus-control holdouts showing the highest-propensity prospects weren't always the most persuadable. At <span className="text-accent">Truist</span> (through Georgia State), I led a team building a cost-sensitive mortgage-fraud model on 500K applications, with SHAP reason codes giving underwriters a per-case explanation. Earlier, in New Delhi, I built a tax-fraud model on 1.4M invoices at South Asian University, layering network analysis to catch circular-trading rings, and BERT pipelines at <span className="text-accent">MetLife</span> surfacing staged-accident narratives in 100K+ adjuster notes.
                 </p>
                 <p>
-                  Over my career, I've collaborated with leading organizations such as <span className="text-accent">Equifax, Truist, and MetLife</span>, delivering data-driven solutions across fraud prevention, customer analytics, and AI-powered automation, driving measurable impact at scale.
+                  Two things show up in everything I ship: the impact has to survive a proper test — holdouts, diff-in-diff, placebo checks — not just a backtest, and the output has to be explainable to the person acting on it, whether that's an underwriter reading a reason code or a marketing partner working a dollar-ranked budget.
+                </p>
+                <p>
+                  I work in <span className="text-primary">Python, SQL, Snowflake, and Spark</span>. MS in Data Science & Analytics from Georgia State, 3.9 GPA. If you work in marketing analytics, experimentation, fraud, or risk, happy to connect.
                 </p>
               </div>
             </div>
